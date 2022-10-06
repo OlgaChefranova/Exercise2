@@ -3,4 +3,11 @@
 
 Console.Clear();
 Console.WriteLine("Введите число");
-int N = int.Pars(Console.ReadLine()!);
+int N = int.Parse(Console.ReadLine()!);
+int x = 1;
+if (x<N)
+{
+    x % 2 == 0;
+    x ++;
+    Console.WriteLine($"Четное число {x}");
+}
