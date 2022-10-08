@@ -2,12 +2,16 @@
 // чётные числа от 1 до N
 
 Console.Clear();
-Console.WriteLine("Введите число");
+Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine()!);
-int x = 1;
-if (x<N)
+
+while(N>1)
 {
-    x % 2 == 0;
-    x ++;
-    Console.WriteLine($"Четное число {x}");
+    
+   if( N % 2 == 0)
+{
+    Console.WriteLine($"Чётное число {N}");
+}
+    N--;
+   
 }
